@@ -1,3 +1,11 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "sqltools.connections": [
+        {
+            "database": "${workspaceFolder}/database/database.sqlite",
+            "dialect": "SQLite",
+            "name": "transaction_fc_gram"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
 }
