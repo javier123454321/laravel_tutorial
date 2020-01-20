@@ -15,9 +15,9 @@
                     <li><strong>37</strong> following</li>
                 </ul>
             </div>
-            <div class="font-weight-bold profileInfo">GraspingDesign.com</div>
-            <div class="profileDescription">Just trying things out, hopefully doing good. Entrepeneur, Developer, Designer, philosophy enthusiast, amateur furniture maker...</div>
-            <div class="font-weight-bold text-dark"><a class="text-dark" href="http://www.memorycaptures.com">http://www.memorycaptures.com</a></div>
+            <div class="font-weight-bold profileInfo">{{ $user->profile->title }}</div>
+            <div class="profileDescription">{{ $user->profile->description }}</div>
+            <div class="font-weight-bold text-dark"><a class="text-dark" href="{{ $user->profile->url }}">{{ $user->profile->url ?? 'Not Available' }}</a></div>
         </div>
     </div>
     <div class="row">
