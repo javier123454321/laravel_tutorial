@@ -8,6 +8,7 @@
         </div>
         <div class="col-md-8 col-sm-12 p-md-5 profileName">
             <h1>{{ $user->username }}</h1>
+            <button class="btn btn-outline-primary btn-sm mt-1 mb-3" variant="outline-primary"> Add New Post </button>
             <div class="col-md-8 col-sm-12 profileData">
                 <ul>
                     <li><strong>153</strong> posts</li>
