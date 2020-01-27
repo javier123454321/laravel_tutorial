@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const PROFILE = '/profile/{{ user()->username }}';
+    public const PROFILE = '/profile/{{auth()->User->username}}';
 
     /**
      * Define your route model bindings, pattern filters, etc.

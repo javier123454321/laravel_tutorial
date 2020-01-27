@@ -13,7 +13,7 @@ class ProfilesController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index($user)
-    {
+    {   
         
         $user = User::findOrFail($user);
         return view('profiles.index', [
