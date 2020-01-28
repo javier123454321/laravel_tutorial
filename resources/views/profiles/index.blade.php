@@ -21,13 +21,12 @@
             <div class="font-weight-bold text-dark"><a class="text-dark" href="{{ $user->profile->url }}">{{ $user->profile->url ?? 'Not Available' }}</a></div>
         </div>
     </div>
-    <div class="row">
-        <div></div>
-    </div>
-    <div class="row">
-        <div class="col-4 minImageContainer"><img class="minImage" src="https://scontent-ort2-2.cdninstagram.com/v/t51.2885-15/sh0.08/e35/c0.179.1440.1440a/s640x640/79212880_992134394482899_6103197192830079747_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=103&_nc_ohc=_rAYQuJ-6VwAX-06BLq&oh=9d95569a53f3c954e3cece5160ac70a8&oe=5EDA55E3"></div>
-        <div class="col-4 minImageContainer"><img class="minImage" src="https://scontent-ort2-2.cdninstagram.com/v/t51.2885-15/e35/s1080x1080/61904293_485469518663618_8701496422875389811_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=102&_nc_ohc=-7Dwsxa3VYgAX_Khd7c&oh=23ee86a3b97113a88fb34aad617f9c15&oe=5EA7CC7B"></div>
-        <div class="col-4 minImageContainer"><img class="minImage" src="https://scontent-ort2-2.cdninstagram.com/v/t51.2885-15/e35/52980597_1497271987069798_1138016754476988360_n.jpg?_nc_ht=scontent-ort2-2.cdninstagram.com&_nc_cat=110&_nc_ohc=CfVw8PsWNLsAX-E3yxB&oh=1c28f81ea7bd906765332ebab9838712&oe=5EDBD341"></div>
+    <div class="row pt-5">
+    @foreach($user->posts as $post)
+        <div class="col-4">
+            <img src="/storage/uploads/{{ $post->image }}" class="w-100">
+        </div>
+    @endforeach
     </div>
 </div>
 
